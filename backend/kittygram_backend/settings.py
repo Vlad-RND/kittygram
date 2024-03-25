@@ -11,7 +11,9 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 
 DEBUG = bool(os.getenv('DEBUG_MODE'))
 
-ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
+# ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
+ALLOWED_HOSTS = ['51.250.31.81', '127.0.0.1',
+                 'localhost', 'infra-study.zapto.org']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
