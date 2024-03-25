@@ -3,6 +3,7 @@ version: '3'
 volumes:
   pg_data:
   static:
+  media:
 
 
 services:
@@ -14,8 +15,11 @@ services:
   backend:
     image: vladrnd/kittygram_backend
     env_file: .env
+    depends_on:
+      - db
     volumes:
       - static:/backend_static
+      - media:/media
   frontend:
     env_file: .env
     image: vladrnd/kittygram_frontend
@@ -25,7 +29,10 @@ services:
   gateway:
     image: vladrnd/kittygram_gateway
     env_file: .env
+    depends_on:
+      - db
     ports:
       - 9000:80
     volumes:
       - static:/static
+      - media:/media
