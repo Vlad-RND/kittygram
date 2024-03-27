@@ -13,37 +13,37 @@ pytest-django 4.4.0, pytest-pythonpath 0.7.3, PyYAML 6.0, gunicorn 20.1.0
 
 ### Как запустить проект:
 Клонировать репозиторий и перейти в него в командной строке:
-...
+```
 git clone https://github.com/Vlad-RND/kittygram_final.git
-...
-...
+```
+```
 cd kittygram_final
-...
+```
 
 ### Создать в директории проекта и заполнить .env:
 Пример заполнения файла содержится в .env.example
 
 ### Подтянуть последнюю версию проекта:
-...
+```
 docker compose -f docker-compose.production.yml pull
-...
+```
 
 ### Запустить инструкцию с автоматическим запуском контейнеров проекта:
-...
+```
 docker compose -f docker-compose.production.yml up
-...
+```
 
 ### Создать миграции в БД проекта:
-...
+```
 docker compose -f docker-compose.production.yml exec backend python manage.py migrate
-...
+```
 
 ### Собрать статику бекэнда и скопировать в нужную директорию:
-...
+```
 docker compose -f docker-compose.production.yml exec backend python manage.py collectstatic
-...
-...
+```
+```
 docker compose -f docker-compose.production.yml exec backend cp -r /app/collected_static/. /backend_static/static/
-...
+```
 
 Автор - Vlad-RND, GIT - https://github.com/Vlad-RND
