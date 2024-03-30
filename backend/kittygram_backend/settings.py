@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = bool(os.getenv('DEBUG_MODE'))
+DEBUG = os.getenv('DEBUG_MODE')
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS').split(',')
 

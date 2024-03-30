@@ -30,7 +30,7 @@ services:
     image: vladrnd/kittygram_gateway
     env_file: .env
     depends_on:
-      - db
+      - backend
     ports:
       - 9000:80
     volumes:
