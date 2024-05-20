@@ -1,4 +1,4 @@
-[![Main Kittygram workflow](https://github.com/Vlad-RND/kittygram_final/actions/workflows/main.yml/badge.svg)](https://github.com/Vlad-RND/kittygram_final/actions/workflows/main.yml)
+<!-- [![Main Kittygram workflow](https://github.com/Vlad-RND/kittygram_final/actions/workflows/main.yml/badge.svg)](https://github.com/Vlad-RND/kittygram_final/actions/workflows/main.yml) -->
 
 # Kittygram
 ### Описание проекта:
