@@ -1,5 +1,6 @@
 [![Main Kittygram workflow](https://github.com/Vlad-RND/kittygram_final/actions/workflows/main.yml/badge.svg)](https://github.com/Vlad-RND/kittygram_final/actions/workflows/main.yml)
 
+# Kittygram
 ### Описание проекта:
 Проект kittygram представляет собой сайт, где пользователь может размещать фотографии 
 своих котиков, предварительно зарегистрировавшись. К фотографиям необходимо добавить имя, 
@@ -14,10 +15,10 @@ pytest-django 4.4.0, pytest-pythonpath 0.7.3, PyYAML 6.0, gunicorn 20.1.0
 ### Как запустить проект:
 Клонировать репозиторий и перейти в него в командной строке:
 ```
-git clone https://github.com/Vlad-RND/kittygram_final.git
+git clone https://github.com/Vlad-RND/kittygram.git
 ```
 ```
-cd kittygram_final
+cd kittygram
 ```
 
 ### Создать в директории проекта и заполнить .env:
@@ -45,5 +46,10 @@ docker compose -f docker-compose.production.yml exec backend python manage.py co
 ```
 docker compose -f docker-compose.production.yml exec backend cp -r /app/collected_static/. /backend_static/static/
 ```
+
+### Функционал:
+- Регистрация;
+- Добавление питомца с фотографией и "достижениями";
+- Добавление "достижений"
 
 Автор - Vlad-RND, GIT - https://github.com/Vlad-RND
